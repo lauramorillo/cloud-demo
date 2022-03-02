@@ -1,0 +1,21 @@
+{
+    "name": "pizza-world",
+    "description": "Simple Pizza Node.js sample.",
+    "version": "0.0.1",
+    "private": true,
+    "license": "Apache-2.0",
+    "author": "Laura Morillo-Velarde",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lauramorillo/urjc-demo.git"
+    },
+    "engines": {
+      "node": ">=10"
+    },
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.3"
+    }
+  }
