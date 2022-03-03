@@ -3,8 +3,7 @@
 # Run always first docker auth configuration
 # gcloud auth configure-docker us-central1-docker.pkg.dev
 
-PROJECT_ID=$(gcloud config get-value project)
-echo ${PROJECT_ID}
+PROJECT_ID=[YOUR_PROJECT]
 VERSION=1
 TAG=gcr.io/${PROJECT_ID}/demo-repo:gke${VERSION}
 

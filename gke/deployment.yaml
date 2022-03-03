@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo
-        image: gcr.io/urjc-demo/demo-repo:gke1
+        image: gcr.io/[YOUR_PROJECT]/demo-repo:gke1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
