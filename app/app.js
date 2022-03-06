@@ -1,10 +1,9 @@
 const express = require('express')
+const pizzaController = require('./controllers/pizza')
 const app = express()
 const port = 8080
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/img/pizza.png')
-})
+app.get('/', pizzaController.getPizza)
 
 app.listen(port, () => {
   console.log(`Pizza app listening on port ${port}`)
