@@ -1,7 +1,7 @@
 #! /bin/bash
 
 gcloud app create \
-    --region us-central
+  --region us-central
 
 cd ../app && gcloud app deploy \
-    --quiet
+  --quiet
