@@ -65,7 +65,7 @@ gcloud compute backend-services add-backend demo-backend-service \
 
 # Define the url map for the backend service created
 gcloud compute url-maps create demo-map \
-  --default-service=demo-backend-service \
+  --default-service=demo-backend-service
 
 # Create the target proxy
 gcloud compute target-http-proxies create demo-proxy \
