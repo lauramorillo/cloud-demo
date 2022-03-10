@@ -37,5 +37,5 @@ gcloud compute firewall-rules delete demo-allow-http-8080 \
   --quiet
 
 # Delete health check
-gcloud compute health-checks delete demo-health-check
+gcloud compute health-checks delete demo-health-check \
   --quiet
