@@ -10,10 +10,10 @@ TAG=gcr.io/${PROJECT_ID}/demo-repo:gke${VERSION}
 docker build ../../app -t ${TAG}
 docker push ${TAG}
 
-gcloud container clusters create-auto demo-auopilot \
+gcloud container clusters create-auto demo-autopilot \
   --region us-central1
 
-gcloud container clusters get-credentials demo-cluster --zone us-central1-f
+gcloud container clusters get-credentials demo-autopilot
 
 kubectl apply -f ../deployment.yaml
 kubectl apply -f ../service.yaml
