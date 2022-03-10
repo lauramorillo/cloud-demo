@@ -1,5 +1,5 @@
 #! /bin/bash
-PROJECT_ID=[YOUR_PROJECT]
+PROJECT_ID=$(cat ../../project_id)
 
 gcloud container clusters delete demo-cluster \
   --zone us-central1-f \

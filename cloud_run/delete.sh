@@ -1,5 +1,5 @@
 #! /bin/bash
-PROJECT_ID=[YOUR_PROJECT]
+PROJECT_ID=$(cat ../project_id)
 
 gcloud run services delete demo \
   --region us-central1 \
