@@ -29,7 +29,7 @@ gcloud compute instance-groups set-named-ports demo-group \
   --named-ports http:8080 \
   --zone us-central1-f
 
-# Create firewall rul to allow traffic to our app
+# Create firewall rule to allow traffic to our app
 gcloud compute firewall-rules create demo-allow-http-8080 \
   --network=default \
   --allow tcp:8080 \
