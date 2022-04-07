@@ -7,7 +7,7 @@
     "author": "Laura Morillo-Velarde",
     "repository": {
       "type": "git",
-      "url": "https://github.com/lauramorillo/urjc-demo.git"
+      "url": "https://github.com/lauramorillo/cloud-demo.git"
     },
     "engines": {
       "node": ">=10"
