@@ -31,7 +31,7 @@ ln -s /opt/nodejs/bin/node /usr/bin/node
 ln -s /opt/nodejs/bin/npm /usr/bin/npm
 
 # Get the application source code from the repository.
-git clone https://github.com/lauramorillo/urjc-demo.git /opt/app/new-repo
+git clone https://github.com/lauramorillo/cloud-demo.git /opt/app/new-repo
 
 # Install app dependencies
 cd /opt/app/new-repo/app
