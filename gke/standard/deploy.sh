@@ -13,6 +13,8 @@ docker push ${TAG}
 gcloud container clusters create demo-cluster --zone us-central1-f
 gcloud container clusters get-credentials demo-cluster --zone us-central1-f
 
+sed -i "s/\[YOUR_PROJECT\]/$PROJECT_ID/" ../deployment.yaml
+
 kubectl apply -f ../deployment.yaml
 kubectl apply -f ../service.yaml
 kubectl apply -f ../ingress.yaml
