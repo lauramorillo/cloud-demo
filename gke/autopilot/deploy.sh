@@ -13,7 +13,8 @@ docker push ${TAG}
 gcloud container clusters create-auto demo-autopilot \
   --region us-central1
 
-gcloud container clusters get-credentials demo-autopilot
+gcloud container clusters get-credentials demo-autopilot \
+  --region us-central1
 
 sed -i "s/\[YOUR_PROJECT\]/$PROJECT_ID/" ../deployment.yaml
 
