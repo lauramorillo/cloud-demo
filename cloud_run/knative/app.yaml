@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: pizza-demo
+spec:
+  template:
+    spec:
+      containerConcurrency: 50
+      containers:
+      - image: gcr.io/[YOUR_PROJECT]/demo-repo:gke1
+        resources:
+          limits:
+            cpu: "1"
+            memory: 512Mi
+        ports:
+        - containerPort: 8080
