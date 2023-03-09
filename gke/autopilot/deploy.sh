@@ -15,6 +15,8 @@ gcloud container clusters create-auto demo-autopilot \
 
 gcloud container clusters get-credentials demo-autopilot
 
+sed -i "s/\[YOUR_PROJECT\]/$PROJECT_ID/" ../deployment.yaml
+
 kubectl apply -f ../deployment.yaml
 kubectl apply -f ../service.yaml
 kubectl apply -f ../ingress.yaml
