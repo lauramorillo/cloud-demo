@@ -6,7 +6,7 @@ gcloud compute instance-templates create demo-template \
   --machine-type=e2-micro \
   --metadata-from-file startup-script=../startup.sh \
   --tags demo \
-  --preemptible \
+  --provisioning-model=SPOT \
   --region us-central1 \
   --network=default \
   --subnet=default \
